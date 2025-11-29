@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo"><img src="/assets/images/logo.svg" alt="weather-logo" >
+    
+    </div>
+    <div class="metric-select">
+      <select name="metric" id="metric">
+              <option class="variable" value="" disabled selected>Units</option>
+              <option class="variable"value="">Switch to imperial</option>
+              <option class="variable" value="" disabled selected>Temperature</option>
+              <option class="check-mark" value="">Celsius(&deg;C)</option>
+              <option class="variable" value="">Farenheit(&deg;F)</option>
+              <option class="variable" value="" disabled selected>Wind Speed</option>
+              <option class="check-mark" value="">Km/h</option>
+              <option class="variable" value="">mph</option>
+              <option class="variable" value="" disabled selected>Precipitation</option>
+              <option class="variable" value="">Millimeters(mm)</option>
+              <option class="check-mark" value="">Inches(in)</option>
+      </select>
+    </div>
+  </div>
+
+<div class="question">
+    <span><h1>How's the sky looking today?</h1></span>
+</div>
+  <div class="middle-bar">
+      <div class="search-container">
+
+        <div class="searchIcon">
+            <span>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#9aa0a6"></path></svg>
+            </span>
+        </div>
+ 
+        <input type="search" placeholder="Search for a place...">
+        
+        </div>
+          <div class="searching-box">
+          <button class="button-search">Search</button>
+      </div>
+  </div>
+  
+  <div class="second-half">
+    <div class="left-side">
+      <img src="/assets/images/bg-today-large.svg" alt="" class="ls-img">
+    
+      <div class="under-sect">
+          <div class="under-variables">
+              <div class="feel-like">
+          <span class="fl-tab"><h2>Feels Like</h2></span>
+          <span class="fl-deg"><h2>64&deg;</h2></span>
+        </div>
+
+         <div class="Humidity">
+          <span class="hm-tab"><h2>Humidity</h2></span>
+          <span class="hm-deg"><h2>46%</h2></span>
+        </div>
+
+         <div class="Wind">
+          <span class="wind-tab"><h2>Wind</h2></span>
+          <span class="wind-deg"><h2>9mph</h2></span>
+        </div>
+
+         <div class="Precipitation">
+          <span class="pcp-tab"><h2>Precipitation</h2></span>
+          <span class="pcp-deg"><h2>0 in</h2></span>
+        </div>
+      </div>
+      </div>
+   
+      <div class="last-half">
+        <span class="fore-text"><h2>Daily Forecast</h2></span>
+      </div>
+
+      <div class="fore-casting">
+        <div class="daily-forecast">
+          <span class="vari-day"><h3>Tue</h3>
+          <img src="/assets/images/icon-rain.webp" alt="" class="vari-img">
+            <span class="num-bers">
+              <div class="left-num"><h2>68&deg;</h2></div>
+              <div class="right-num"><h2>51&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+    
+    <div class="daily-forecast">
+          <span class="vari-day"><h3>Wed</h3>
+          <img src="/assets/images/icon-drizzle.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>70&deg;</h2></div>
+            <div class="right-num"><h2>59&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+        
+        <div class="daily-forecast">
+          <span class="vari-day"><h3>Thu</h3>
+          <img src="/assets/images/icon-sunny.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>75&deg;</h2></div>
+            <div class="right-num"><h2>57&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+
+        <div class="daily-forecast">
+          <span class="vari-day"><h3>Fri</h3>
+          <img src="/assets/images/icon-partly-cloudy.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>77&deg;</h2></div>
+            <div class="right-num"><h2>55&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+
+
+        <div class="daily-forecast">
+          <span class="vari-day"><h3>Sat</h3>
+          <img src="/assets/images/icon-storm.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>70&deg;</h2></div>
+            <div class="right-num"><h2>59&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+
+
+  <div class="daily-forecast">
+          <span class="vari-day"><h3>Sun</h3>
+          <img src="/assets/images/icon-snow.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>77&deg;</h2></div>
+            <div class="right-num"><h2>61&deg;</h2></div>
+            </span>
+          </span>
+        </div>
+
+        <div class="daily-forecast">
+          <span class="vari-day"><h3>Mon</h3>
+          <img src="/assets/images/icon-fog.webp" alt="" class="vari-img">
+            <span class="num-bers">
+            <div class="left-num"> <h2>75&deg;</h2></div>
+            <div class="right-num"><h2>59&deg;</h2></div>
+            </span>
+          </span>
+        </div>`
+      </div>
+    </div>
+
+
+
+
+
+
+
+         <div class="right-side">`
+        <div class="top-line">
+          <div class="first-line"><h3>Hourly Forecast</h3></div>
+          <div class="sel-opt">
+            <select name="metric" id="metric">
+                <option class="variable"value="">Tuesday</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="other-bars">
+          <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-overcast.webp" alt="" class="first-img"></span>
+              <span class="vari-num">3pm</span>          
+            </div>
+             <span class="variable-txt"><h3>68&deg;</h3></span> 
+        </div>
+
+
+
+          <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-partly-cloudy.webp" alt="" class="first-img"></span>
+              <span class="vari-num">4pm</span>          
+            </div>
+             <span class="variable-txt"><h3>68&deg;</h3></span> 
+        </div>
+
+
+
+          <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-sunny.webp" alt="" class="first-img"></span>
+              <span class="vari-num">5pm</span>          
+            </div>
+             <span class="variable-txt"><h3>68&deg;</h3></span> 
+        </div>
+
+
+
+          <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-overcast.webp" alt="" class="first-img"></span>
+              <span class="vari-num">6pm</span>          
+            </div>
+             <span class="variable-txt"><h3>66&deg;</h3></span> 
+        </div>
+
+
+
+          <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-snow.webp" alt="" class="first-img"></span>
+              <span class="vari-num">7pm</span>          
+            </div>
+             <span class="variable-txt"><h3>66&deg;</h3></span> 
+        </div>
+
+
+
+                  <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-fog.webp" alt="" class="first-img"></span>
+              <span class="vari-num">8pm</span>          
+            </div>
+             <span class="variable-txt"><h3>64&deg;</h3></span> 
+        </div>
+
+
+
+                  <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-snow.webp" alt="" class="first-img"></span>
+              <span class="vari-num">9pm</span>          
+            </div>
+             <span class="variable-txt"><h3>63&deg;</h3></span> 
+        </div>
+
+
+
+                  <div class="three-pm">
+            <div class="btleft-side">
+              <span class="variable-img"><img src="/assets/images/icon-overcast.webp" alt="" class="first-img"></span>
+              <span class="vari-num">10pm</span>          
+            </div>
+             <span class="variable-txt"><h3>63&deg;</h3></span> 
+        </div>
+    </div>  
+  </div>
+</body> 
+</html>
