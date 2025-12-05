@@ -22,12 +22,13 @@ body{
     min-width: 5%;
 }
 
-.ls-img{
+.image-container{
     background-image: url("/assets/images/bg-today-large.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
+    height: 15rem;
 }
 
 select{
@@ -47,8 +48,8 @@ select{
     align-items: center;
     justify-content: center;
     color: white;
-    padding: 5rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
 }
 
 .search-container{
@@ -122,10 +123,6 @@ select{
     flex-direction: row;   
 }
 
-.ls-img{
-    height: 15rem;
-}
-
 .under-sect{
     display: flex;
     align-items: center;
@@ -186,10 +183,9 @@ select{
     display: flex;
     align-items: center;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     width: 100%;
     height: 100%;
-    padding-left: rem;
 }
 
 .daily-forecast{
@@ -346,8 +342,9 @@ select{
     .fore-casting{
         display: grid;
         gap: 0.5rem;
-        width: 100%;
+        width: 96%;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-right: 10rem;
     }
 
     .right-side{
